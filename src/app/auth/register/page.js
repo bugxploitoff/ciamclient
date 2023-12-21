@@ -21,7 +21,7 @@ export default function Home() {
     event.preventDefault();
 
     try {
-      const response = await fetch('http://localhost:5000/register', {
+      const response = await fetch('http://ec2-3-17-74-205.us-east-2.compute.amazonaws.com:5000/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
