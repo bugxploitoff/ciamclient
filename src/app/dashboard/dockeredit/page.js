@@ -62,7 +62,7 @@ const Page = () => {
   useEffect(() => {
     // Fetch user data based on regno (assuming it's the correct parameter name)
     if (pageParam) {
-      fetch('http://localhost:5000/dockeredit', {
+      fetch('http://ec2-3-17-74-205.us-east-2.compute.amazonaws.com:5000/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
