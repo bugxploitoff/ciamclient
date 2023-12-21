@@ -19,7 +19,7 @@ const Page = () => {
     } else {
         console.log(sessionCookie);
       // Send the session to API for verification
-      fetch('http://localhost:5000/verify', {
+      fetch('http://ec2-3-17-74-205.us-east-2.compute.amazonaws.com:5000/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
